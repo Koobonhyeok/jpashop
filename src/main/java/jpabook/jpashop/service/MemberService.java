@@ -12,14 +12,14 @@ import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
-@RequiredArgsConstructor // final이 선언되어 있는것을 적용
+//@RequiredArgsConstructor // final이 선언되어 있는것을 적용
 public class MemberService {
     private final MemberRepository memberRepository;
 
-//    @Autowired
-//    public MemberService( MemberRepository memberRepository ){
-//        this.memberRepository = memberRepository;
-//    }
+    @Autowired
+    public MemberService( MemberRepository memberRepository ){
+        this.memberRepository = memberRepository;
+    }
 
     // 회원 가입
     @Transactional
