@@ -16,10 +16,10 @@ import java.util.List;
 public class MemberService {
     private final MemberRepository memberRepository;
 
-    @Autowired
-    public MemberService( MemberRepository memberRepository ){
-        this.memberRepository = memberRepository;
-    }
+//    @Autowired
+//    public MemberService( MemberRepository memberRepository ){
+//        this.memberRepository = memberRepository;
+//    }
 
     // 회원 가입
     @Transactional
